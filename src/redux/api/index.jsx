@@ -4,6 +4,7 @@ import { signOut } from "../slices/auth-slice";
 const baseQuery = async (args, api, extraOptions) => {
   const { dispatch } = api;
   const rawBaseQuery = fetchBaseQuery({
+
     baseUrl: import.meta.env.VITE_BASE_URL,
     prepareHeaders: (headers) => {
       const token = localStorage.getItem("token");
@@ -17,11 +18,13 @@ const baseQuery = async (args, api, extraOptions) => {
   const response = await rawBaseQuery(args, api, extraOptions);
 
   if (response.error) {
+    console.error('API Error:', response.error);
     const { status } = response.error;
     if (status === 401 || status === 403) {
       dispatch(signOut());
     }
   }
+  
 
   return response;
 };
