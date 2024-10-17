@@ -1,0 +1,11 @@
+.text{
+    @apply text-base font-medium text-[#596780]
+}
+
+.title{
+    @apply text-xl font-semibold text-[#424a59]
+}
+
+.text2{
+    @apply text-base font-medium text-[#424a59]
+}

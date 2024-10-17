@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f7f7f7;
+    
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+   
+}
+
+
+.ant-btn-primary{
+    height: 35px !important;
+    text-align: center !important;
+    
+}
+.ant-btn-primary span{
+    font-size: 20px;
+}
+
+.boxShadow{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* header  */
+
+.search_input {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    outline: none;
+    height: 100%;
+}
+
+/* hero */
+
+
+.ant-carousel:hover .slick-arrow:not(.slick-disabled) {
+    opacity: 1 !important;
+}
+
+.slick-arrow {
+    opacity: 0 !important;
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 30px !important;
+    color: #000 !important;
+}
+
+.slick-arrow::after,
+.slick-arrow::before {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+/* .search_input */
+
+.ant-select-selector {
+    border: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.cascader {
+    border: 1px solid #d9d9d9;
+}
+
+/*  header */
+
+
+
+/* add new car  */
+ .ant-steps-item-icon {
+    background-color: #ffff important;
+    border-color: #173257  !important;
+ }
+
+ .ant-steps-icon{
+    color: #fff !important;
+ }
+
+ .ant-steps-item-title::after{
+    background-color: #173257 !important;
+ }
+
+ .ant-steps-item-finish .ant-steps-item-icon{
+    background-color: #173257 !important;
+    color: #fff !important;
+ }
+
+ .ant-steps-item-process .ant-steps-item-icon{
+    background-color: #173257 !important;
+    color: #fff !important;
+ }
+
+ .ant-steps-item-wait .ant-steps-item-icon{
+    background-color: #fff !important;
+    color: #173257 !important;
+ }
+
+
+
+/*  add new car */

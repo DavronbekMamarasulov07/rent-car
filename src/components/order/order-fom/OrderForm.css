@@ -1,0 +1,8 @@
+.ant-picker-range .ant-picker-active-bar {
+  background-color: #0a0a0b !important;
+}
+
+.ant-picker-outlined:focus,
+.ant-picker-outlined:focus-within {
+  border-color: #556275 !important;
+}
